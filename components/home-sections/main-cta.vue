@@ -15,7 +15,8 @@
 
 <style lang="scss" scoped>
 .maincta__wrapper {
-    padding: 50px 80px;
+    background-color: #fff;
+    padding:80px 80px 50px 80px;
 }
 .maincta__title {
     color: #2c2255;

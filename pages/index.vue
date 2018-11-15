@@ -7,8 +7,9 @@
         <Tech/>
       </no-ssr>
     </v-container>
-    <v-container fluid>
+    <v-container fluid pa-0>
       <main-c-t-a/>
+      <Features/>
     </v-container>
     <v-container fluid>
       footer
@@ -20,11 +21,12 @@
 import Navbar from "~/components/navigation/Navbar"
 import Hero from "~/components/navigation/Hero"
 import MainCTA from "~/components/home-sections/main-cta"
+import Features from "~/components/home-sections/features"
 
 export default {
   layout: 'home',
   components: {
-    Navbar, Hero, MainCTA,
+    Navbar, Hero, MainCTA, Features,
     Tech: () => import('~/components/tech/Technologies')
   }
 }
@@ -38,6 +40,10 @@ export default {
     background-position: top right;
     background-size: contain;
     background-repeat: no-repeat;
+  }
+
+  .no__padding {
+    padding: 0;
   }
 
   @media all and (max-width: 1550px) {

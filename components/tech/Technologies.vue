@@ -26,6 +26,15 @@
         <slide :index="7" class="img__wrapper">
             <img src="/tech/webpack.png" alt="webpack" class="item">
         </slide>
+        <slide :index="8" class="img__wrapper">
+            <img src="/tech/vue.png" alt="vue" class="item">
+        </slide>
+        <slide :index="9" class="img__wrapper">
+            <img src="/tech/nuxt.png" alt="nuxt" class="item">
+        </slide>
+        <slide :index="10" class="img__wrapper">
+            <img src="/tech/git.png" alt="git" class="item">
+        </slide>
     </carousel>
     </div>
 </template>
