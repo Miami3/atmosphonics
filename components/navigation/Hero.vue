@@ -21,7 +21,7 @@
 </template>
 
 <style lang="scss" scoped>
-    .hero__container {
+  .hero__container {
     padding: 80px 0;
   }
 

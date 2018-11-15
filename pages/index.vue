@@ -1,15 +1,16 @@
 <template>
   <v-content>
-    <v-container class="banner__container">
+    <v-container fluid class="banner__container">
       <Navbar/>
       <Hero/>
-    </v-container>
-    <v-container>
       <no-ssr placeholder="loading...">
         <Tech/>
       </no-ssr>
     </v-container>
-    <v-container>
+    <v-container fluid>
+      <main-c-t-a/>
+    </v-container>
+    <v-container fluid>
       footer
     </v-container>
   </v-content>
@@ -18,11 +19,12 @@
 <script>
 import Navbar from "~/components/navigation/Navbar"
 import Hero from "~/components/navigation/Hero"
+import MainCTA from "~/components/home-sections/main-cta"
 
 export default {
   layout: 'home',
   components: {
-    Navbar, Hero,
+    Navbar, Hero, MainCTA,
     Tech: () => import('~/components/tech/Technologies')
   }
 }
@@ -34,17 +36,11 @@ export default {
     background-color: #fff;
     background-image: url('/home/home_banner.jpg');
     background-position: top right;
-    background-size: auto;
+    background-size: contain;
     background-repeat: no-repeat;
   }
 
   @media all and (max-width: 1550px) {
-    .banner__container {
-      background-size: contain;
-    }
-  }
-
-  @media all and (max-width: 1300px) {
     .banner__container {
       background-size: 60%;
     }
