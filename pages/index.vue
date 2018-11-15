@@ -1,10 +1,15 @@
 <template>
   <v-content>
-    <v-container fluid class="banner__container">
+    <v-container class="banner__container">
       <Navbar/>
       <Hero/>
     </v-container>
-    <v-container fluid>
+    <v-container>
+      <no-ssr placeholder="loading...">
+        <Tech/>
+      </no-ssr>
+    </v-container>
+    <v-container>
       footer
     </v-container>
   </v-content>
@@ -17,7 +22,8 @@ import Hero from "~/components/navigation/Hero"
 export default {
   layout: 'home',
   components: {
-    Navbar, Hero
+    Navbar, Hero,
+    Tech: () => import('~/components/tech/Technologies')
   }
 }
 </script>
