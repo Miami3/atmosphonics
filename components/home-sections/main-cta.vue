@@ -63,8 +63,11 @@
 }
 @media all and (max-width: 960px) {
     .maincta__wrapper {
-    padding: 50px 0;
-}
+        padding: 50px 10px;
+    }
+    .maincta__title {
+        font-size: 34px;
+    }
 }
 </style>
 
