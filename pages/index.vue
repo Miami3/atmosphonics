@@ -11,6 +11,7 @@
       <main-c-t-a/>
       <Features/>
       <Solutions/>
+      <Services/>  
     </v-container>
     <v-container fluid>
       footer
@@ -24,11 +25,12 @@ import Hero from "~/components/navigation/Hero"
 import MainCTA from "~/components/home-sections/main-cta"
 import Features from "~/components/home-sections/features"
 import Solutions from "~/components/home-sections/solutions"
+import Services from "~/components/home-sections/services"
 
 export default {
   layout: 'home',
   components: {
-    Navbar, Hero, MainCTA, Features, Solutions,
+    Navbar, Hero, MainCTA, Features, Solutions, Services,
     Tech: () => import('~/components/tech/Technologies')
   }
 }
