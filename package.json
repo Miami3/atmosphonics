@@ -19,6 +19,7 @@
     "nuxt": "^1.0.0",
     "sass-loader": "^7.1.0",
     "vue-carousel": "^0.16.0-rc2",
+    "vue-carousel-3d": "^0.1.23",
     "vue-style-loader": "^4.1.2",
     "vuetify": "^1.0.19"
   },

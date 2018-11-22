@@ -11,7 +11,10 @@
       <main-c-t-a/>
       <Features/>
       <Solutions/>
-      <Services/>  
+      <Services/>
+      <no-ssr placeholder="loading...">
+        <Applications/>
+      </no-ssr>  
     </v-container>
     <v-container fluid>
       footer
@@ -31,6 +34,7 @@ export default {
   layout: 'home',
   components: {
     Navbar, Hero, MainCTA, Features, Solutions, Services,
+    Applications: () => import('~/components/home-sections/applications'),
     Tech: () => import('~/components/tech/Technologies')
   }
 }

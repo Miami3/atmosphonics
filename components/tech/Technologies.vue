@@ -12,28 +12,28 @@
             <img src="/tech/js.png" alt="javascript" class="item">
         </slide>
         <slide :index="3" class="img__wrapper">
-            <img src="/tech/mongo.png" alt="mongo" class="item">
+            <img src="~/static/tech/mongo.png" alt="mongo" class="item">
         </slide>
         <slide :index="4" class="img__wrapper">
-            <img src="/tech/mysql.png" alt="mysql" class="item">
+            <img src="~/static/tech/mysql.png" alt="mysql" class="item">
         </slide>
         <slide :index="5" class="img__wrapper">
-            <img src="/tech/node.png" alt="node" class="item">
+            <img src="~/static/tech/node.png" alt="node" class="item">
         </slide>
         <slide :index="6" class="img__wrapper">
-            <img src="/tech/php.png" alt="php" class="item">
+            <img src="~/static/tech/php.png" alt="php" class="item">
         </slide>
         <slide :index="7" class="img__wrapper">
-            <img src="/tech/webpack.png" alt="webpack" class="item">
+            <img src="~/static/tech/webpack.png" alt="webpack" class="item">
         </slide>
         <slide :index="8" class="img__wrapper">
-            <img src="/tech/vue.png" alt="vue" class="item">
+            <img src="~/static/tech/vue.png" alt="vue" class="item">
         </slide>
         <slide :index="9" class="img__wrapper">
-            <img src="/tech/nuxt.png" alt="nuxt" class="item">
+            <img src="~/static/tech/nuxt.png" alt="nuxt" class="item">
         </slide>
         <slide :index="10" class="img__wrapper">
-            <img src="/tech/git.png" alt="git" class="item">
+            <img src="~/static/tech/git.png" alt="git" class="item">
         </slide>
     </carousel>
     </div>
