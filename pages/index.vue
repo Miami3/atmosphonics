@@ -14,10 +14,11 @@
       <Services/>
       <no-ssr placeholder="loading...">
         <Applications/>
-      </no-ssr>  
+      </no-ssr>
+      <Whythebest/>  
     </v-container>
     <v-container fluid>
-      footer
+      <Footer/>
     </v-container>
   </v-content>
 </template>
@@ -29,11 +30,14 @@ import MainCTA from "~/components/home-sections/main-cta"
 import Features from "~/components/home-sections/features"
 import Solutions from "~/components/home-sections/solutions"
 import Services from "~/components/home-sections/services"
+import Whythebest from "~/components/home-sections/whythebest"
+import Footer from "~/components/footer"
 
 export default {
   layout: 'home',
   components: {
-    Navbar, Hero, MainCTA, Features, Solutions, Services,
+    Navbar, Hero, MainCTA, Features, Solutions, Services, Whythebest,
+    Footer,
     Applications: () => import('~/components/home-sections/applications'),
     Tech: () => import('~/components/tech/Technologies')
   }
