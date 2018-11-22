@@ -19,8 +19,9 @@
       <no-ssr placeholder="loading...">  
         <Testimonials/>
       </no-ssr>
+      <footer-c-t-a/>
     </v-container>
-    <v-container fluid>
+    <v-container fluid pa-0>
       <Footer/>
     </v-container>
   </v-content>
@@ -30,6 +31,7 @@
 import Navbar from "~/components/navigation/Navbar"
 import Hero from "~/components/navigation/Hero"
 import MainCTA from "~/components/home-sections/main-cta"
+import FooterCTA from "~/components/home-sections/footer-cta"
 import Features from "~/components/home-sections/features"
 import Solutions from "~/components/home-sections/solutions"
 import Services from "~/components/home-sections/services"
@@ -40,7 +42,7 @@ export default {
   layout: 'home',
   components: {
     Navbar, Hero, MainCTA, Features, Solutions, Services, Whythebest,
-    Footer,
+    Footer, FooterCTA,
     Testimonials: () => import('~/components/home-sections/testimonials'),
     Applications: () => import('~/components/home-sections/applications'),
     Tech: () => import('~/components/tech/Technologies')
