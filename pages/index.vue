@@ -15,7 +15,10 @@
       <no-ssr placeholder="loading...">
         <Applications/>
       </no-ssr>
-      <Whythebest/>  
+      <Whythebest/>
+      <no-ssr placeholder="loading...">  
+        <Testimonials/>
+      </no-ssr>
     </v-container>
     <v-container fluid>
       <Footer/>
@@ -38,6 +41,7 @@ export default {
   components: {
     Navbar, Hero, MainCTA, Features, Solutions, Services, Whythebest,
     Footer,
+    Testimonials: () => import('~/components/home-sections/testimonials'),
     Applications: () => import('~/components/home-sections/applications'),
     Tech: () => import('~/components/tech/Technologies')
   }
